@@ -1,0 +1,36 @@
+# class and instance of employee
+
+class employee:
+    def __init__(self, id, first_name, last_name, salary):
+        self.id = id
+        self.first_name = first_name
+        self.last_name = last_name
+        self.salary = salary
+
+    def get_full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
+    def email_address_of_the_employee(self):
+        return f"{self.first_name}{self.last_name}@company.com"
+
+    def yearly_salary_of_the_employee(self):
+        return 12 * self.salary
+
+
+Emp1 = employee(45867, "anto", "ebel", 18000)
+Emp2 = employee(45868, "anto", "joe", 20000)
+Emp3 = employee(45869, "chris", "evan", 22000)
+
+print(Emp1.get_full_name())
+print(Emp1.email_address_of_the_employee())
+print(Emp1.yearly_salary_of_the_employee())
+
+print(Emp2.get_full_name())
+print(Emp2.email_address_of_the_employee())
+print(Emp2.yearly_salary_of_the_employee())
+
+print(Emp3.get_full_name())
+print(Emp3.email_address_of_the_employee())
+print(Emp3.yearly_salary_of_the_employee())
+
+
